@@ -1,3 +1,39 @@
 body{
     background-color: #f09f9f;
+    text-align: center;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(12, 59, 97);
+}
+
+#login_container form{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 40%;
+    min-height: 200px;
+    padding: 20px;
+    background-color: #d95757ad;
+}
+
+#login_container input{
+    border: none;
+    margin: 10px;
+    width: 90%;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#login_container button{
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
 }
