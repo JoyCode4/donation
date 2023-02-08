@@ -1,0 +1,45 @@
+body{
+    background-color: #eecfcf;
+    font-family: sans-serif;
+}
+
+.all_creators{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.creator{
+    width: 230px;
+    height: 300px;
+}
+
+.creator img{
+    width: 230px;
+    height: 200px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.creator img:hover{
+    box-shadow: 0px 0px 2px 5px rgb(31, 118, 218);
+}
+.profileContentContainer a{
+    text-decoration: none;
+    color: black;
+}
+.profileContentContainer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileContentContainer p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.profileContentContainer span{
+    font-size: small;
+}
