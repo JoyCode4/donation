@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/profile.css">
 <h1><%= title %></h1>
-
+<%if(locals.user){%>
 <div class="all_creators">
     <div class="creator">
         <a href=""><img src="/images/BB.jpg" alt="BB ki wines"></a>
@@ -74,3 +74,4 @@
         </div>
     </div>
 </div>
+<%}%>
