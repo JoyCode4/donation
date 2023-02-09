@@ -1,0 +1,39 @@
+body{
+    background-color: #f09f9f;
+    text-align: center;
+}
+
+p{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(12, 59, 97);
+}
+
+.donation_container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 40%;
+    min-height: 200px;
+    padding: 20px;
+    background-color: #d95757ad;
+}
+
+.donation_container input{
+    border: none;
+    margin: 10px;
+    width: 90%;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.donation_container button{
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
+}

@@ -5,5 +5,6 @@ console.log("Router Loaded");
 
 router.get('/', homeController.home);
 router.use("/users",require("./users"));
+router.use("/donations",require("./donation"));
 
 module.exports = router;

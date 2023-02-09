@@ -2,76 +2,24 @@
 <link rel="stylesheet" href="/css/profile.css">
 <h1><%= title %></h1>
 <%if(locals.user){%>
-<div class="all_creators">
-    <div class="creator">
-        <a href=""><img src="/images/BB.jpg" alt="BB ki wines"></a>
-        <div class="profileContentContainer">
-            <a href="">
-                <div class="imageContent">
-                    <p>BB ki Vines</p>
-                    <span>Youtuber</span>
+    <div class="all_creators">
+        <% for(let user of all_users){ %>
+            <% if(user._id!=locals.user.id){ %>
+                <div class="creator">
+                    <a href="/donations/d/?id=<%= user.id %>"><img src="https://source.unsplash.com/random/520x600/?fitness,fruit,technology" alt="https://unsplash.com/photos/EVQ27AXRkVA"></a>
+                    <div class="profileContentContainer">
+                        <a href="/donations/d/?id=<%= user.id %>">
+                            <div class="imageContent">
+                                <p><%= user.username %></p>
+                                <span><%= user.profession %></span>
+                            </div>
+                        </a>
+                        <div class="like">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                    </div>
                 </div>
-            </a>
-            <div class="like">
-                <i class="fa fa-heart"></i>
-            </div>
-        </div>
+            <%}%>
+        <%}%>
     </div>
-    <div class="creator">
-        <img src="/images/BB.jpg" alt="BB ki wines" width="200px" height="200px">
-        <div class="profileContentContainer">
-            <a href="">
-                <div class="imageContent">
-                    <p>BB ki Vines</p>
-                    <span>Youtuber</span>
-                </div>
-            </a>
-            <div class="like">
-                <i class="fa fa-heart"></i>
-            </div>
-        </div>
-    </div>
-    <div class="creator">
-        <img src="/images/BB.jpg" alt="BB ki wines" width="200px" height="200px">
-        <div class="profileContentContainer">
-            <a href="">
-                <div class="imageContent">
-                    <p>BB ki Vines</p>
-                    <span>Youtuber</span>
-                </div>
-            </a>
-            <div class="like">
-                <i class="fa fa-heart"></i>
-            </div>
-        </div>
-    </div>
-    <div class="creator">
-        <img src="/images/BB.jpg" alt="BB ki wines" width="200px" height="200px">
-        <div class="profileContentContainer">
-            <a href="">
-                <div class="imageContent">
-                    <p>BB ki Vines</p>
-                    <span>Youtuber</span>
-                </div>
-            </a>
-            <div class="like">
-                <i class="fa fa-heart"></i>
-            </div>
-        </div>
-    </div>
-    <div class="creator">
-        <img src="/images/BB.jpg" alt="BB ki wines" width="200px" height="200px">
-        <div class="profileContentContainer">
-            <a href="">
-                <div class="imageContent">
-                    <p>BB ki Vines</p>
-                    <span>Youtuber</span>
-                </div>
-            </a>
-            <div class="like">
-                <i class="fa fa-heart"></i>
-            </div>
-        </div>
-    </div>
-</div>
 <%}%>

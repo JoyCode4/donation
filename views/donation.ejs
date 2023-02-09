@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/css/donation.css">
+
+<h1><%= title %></h1>
+<p>Send you love to <%= receiver.username %> to become a real Fan</p>
+<div class="donation_container">
+    <form action="/donations/create" method="post">
+        <input type="number" name="amount" placeholder="2000" required>
+        <input type="hidden" name="sender" required value="<%= locals.user.username %>">
+        <input type="hidden" name="receiver" required value="<%= receiver.username %>">
+        <input type="text" name="name" placeholder="Your name (optional)">
+        <input type="textarea" name="message" placeholder="Say something nice (optional)">
+        <button type="submit">Support $</button>
+    </form>
+</div>
