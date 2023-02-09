@@ -6,7 +6,7 @@
         <% for(let user of all_users){ %>
             <% if(user._id!=locals.user.id){ %>
                 <div class="creator">
-                    <a href="/donations/d/?id=<%= user.id %>"><img src="https://source.unsplash.com/random/520x600/?fitness,fruit,technology" alt="https://unsplash.com/photos/EVQ27AXRkVA"></a>
+                    <a href="/donations/d/?id=<%= user.id %>"><img src="<%= user.profileUrl %>"></a>
                     <div class="profileContentContainer">
                         <a href="/donations/d/?id=<%= user.id %>">
                             <div class="imageContent">

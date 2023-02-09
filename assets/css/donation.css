@@ -1,14 +1,25 @@
-body{
-    background-color: #f09f9f;
-    text-align: center;
-}
 
+
+body{
+    background-color: #ec9a9a;
+    text-align: center;
+    font-family: sans-serif;
+}
 p{
     font-family: monospace;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(12, 59, 97);
+    margin: 30px 10px;
+}
+p span{
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3e2705;
+    text-decoration:underline;
+
 }
 
 .donation_container{
@@ -18,10 +29,10 @@ p{
     align-items: center;
     flex-direction: column;
     margin: 10px auto;
-    width: 40%;
+    width: 30%;
     min-height: 200px;
     padding: 20px;
-    background-color: #d95757ad;
+    background-color: #d957575c;
 }
 
 .donation_container input{
@@ -36,4 +47,10 @@ p{
     border: none;
     padding: 6px 15px;
     border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.donation_container button:hover{
+    background-color: #5186b1;
+    cursor: pointer;
 }

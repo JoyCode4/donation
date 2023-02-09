@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="/css/donation.css">
 
-<h1><%= title %></h1>
-<p>Send you love to <%= receiver.username %> to become a real Fan</p>
+<p>Send you love to <span><%= receiver.username %></span> to become a real Fan</p>
 <div class="donation_container">
     <form action="/donations/create" method="post">
         <input type="number" name="amount" placeholder="2000" required>

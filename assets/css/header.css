@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header{
+    width: 100vw;
+    position: sticky;
+}
+/* Logout */
+.Logout{
+    background-color: rgb(176, 49, 235);
+    height: 40px;
+}
+.Logout{
+    display: flex;
+    flex-direction: reverse;
+    text-align: center;
+}
+
+.Logout a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.Logout li{
+    list-style: none;
+    margin: 1px 2px 2px 2px;
+    /* border: 2px solid black; */
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.Logout li:hover{
+    background-color: #bd1cd9;
+}
+
+/* Login */
+.Login{
+    background-color: rgb(176, 49, 235);
+    height: 40px;
+}
+.Login{
+    display: flex;
+    flex-direction: reverse;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.Login a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.Login li{
+    list-style: none;
+    margin: 1px 2px 2px 2px;
+    /* border: 2px solid black; */
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.Login .user_info{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Login .user_info div{
+    margin: 0px 10px;
+}
+
+.Login .fa-solid{
+    color: black;
+}

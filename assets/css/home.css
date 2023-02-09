@@ -1,4 +1,8 @@
 body{
-    background-color: #f09f9f;
-    font-family: monospace;
+    width: 400px;
+    height: 100vh;
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
 }

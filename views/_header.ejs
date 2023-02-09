@@ -1,22 +1,32 @@
-
+<link rel="stylesheet" href="/css/header.css">
 <header>
-    <h1>Header</h1>
-
+    <!-- <h1>Header</h1> -->
+<div class="header">
     <ul>
         <% if(locals.user){ %>
-            <li><%= user.username %></li>
-            <li><%= user.profileUrl %></li>
-            <li><%= user.profession %></li>
-            <li>
-                <a href="/users/sign-out">Sign Out</a>
-            </li>
+            <section class="ifLogin">
+                <div class="Login">
+                    <li>
+                        <a href="/users/sign-out"><i class="fa-solid fa-right-from-bracket"></i></a>
+                    </li>
+                    <div class="user_info">
+                        <div><%= user.username %></div>
+                        <div><i class="fa-solid fa-user"></i></div>
+                    </div>
+                </div>
+            </section>
         <%}else{%>
-            <li>
-                <a href="/users/sign-in">Sign In</a>
-            </li>
-            <li>
-                <a href="/users/sign-up">Sign Up</a>
-            </li>
+            <section class="ifLogout">
+                <div class="Logout">
+                    <li>
+                        <a href="/users/sign-in">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="/users/sign-up">Sign Up</a>
+                    </li>
+                </div>
+            </section>
         <%}%>
     </ul>
+</div>
 </header>
